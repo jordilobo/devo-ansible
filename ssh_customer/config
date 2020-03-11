@@ -1,0 +1,32 @@
+### Sample ssh config file: set specific values for your enviroment ###
+
+Host CustomerHost-dn01
+  HostName 1.2.3.1
+  user ubuntu
+  StrictHostKeyChecking no
+  IdentityFile /root/.ssh/customer_server_pem.pem
+
+Host CustomerHost-dn02
+  HostName 1.2.3.2
+  user ubuntu
+  StrictHostKeyChecking no
+  IdentityFile /root/.ssh/customer_server_pem.pem
+
+Host CustomerHost-aux
+  HostName 1.2.3.3
+  user ubuntu
+  StrictHostKeyChecking no
+  IdentityFile /root/.ssh/customer_server_pem.pem
+
+################################
+#### Jump server sample use ####
+################################
+# Host bastion_jumpserver
+#  HostName 2.3.4.5
+#  User bastion_user
+#  IdentityFile ~/.ssh/bastion_server_pem
+
+# Host CustomerHost-dn1
+#  ProxyCommand ssh -q bastion_jumpserver nc 10.1.2.3 22
+#  user server_ssh_auth_user
+#  IdentityFile ~/.ssh/customer_server_pem.pem
