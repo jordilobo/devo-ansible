@@ -1,7 +1,5 @@
 # Docker Devo Ansible
 
-## Visit [GitHub Devo-Ansible](https://github.com/DevoInc/devo-ansible) for full information: 
-
 Docker Devo container tool: Designed to install Devo solution can be used to run ansible without to install it in your personal computer.
 
 Tools inside:
