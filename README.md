@@ -52,6 +52,7 @@ This docker needs two directories to run and deploy Devo solution
 3. This container has all necessary tools to install Devo. Follow the instructions to do it
 4. Docker requirements should be done in server before to install Devo.
 5. This container can be used to install whatever you need with ansible
+6. Configure your [customer_hosts](./customer_hosts) file and [ssh_customer](./ssh_customer) directory for your purposes
 
 ## Run devo-ansible container:
 
